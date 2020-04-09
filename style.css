@@ -1,0 +1,130 @@
+body{
+	font-family: 'Chivo', Arial, sans-serif;
+	margin: 0;
+}
+h1{
+	padding-left: 50px;
+}
+h2{
+	font-weight: bold;
+}
+h1, h2{
+	text-transform: uppercase;
+}
+h1 span {
+	color: #ffca0a;
+}
+aside, footer{
+	background-color: #ffca0a;
+	padding: 0;
+}
+aside h2, footer h2{
+	background-color: #4a3d35;
+	color: #ffca0a;
+	text-align: center;
+}
+aside img{
+	border-radius: 50%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	display: block;
+}
+main{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+main h2{
+	border-bottom: solid #ffca0a;
+}
+main i{
+	color:#ffca0a;
+	margin: 0px 10px 0px 0px;
+}
+footer ul{
+	display: flex;
+	justify-content: space-around;
+}
+footer li{
+	border: solid black;
+	border-radius: 50%;
+	height:75px;
+	width:75px;
+	text-align: center;
+}
+address{
+	font-style: normal;
+	padding-left: 50px;
+}
+ul{
+	list-style:none;
+	margin-left:0;
+	margin-top:0;
+	padding-left:0;
+}
+p{
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: justify;
+}
+#souligne{
+	border-bottom: solid #ffca0a;
+}
+.lg-prm{
+	font-weight: bold;
+}
+.col-scd{
+	text-transform: uppercase;
+}
+.col-rec{
+	text-transform: uppercase;
+}
+
+/*Etant donné que nous voulons que le container ait une largeur de 1230px 
+uniquement en version desktop, il va nous falloir cibler tous les écrans 
+qui ont une largeur égale ou supérieure à 1200 px
+*/
+@media (min-width: 300px) {
+	.container {
+		width: 400px;
+	}
+	.cards {
+		grid-template-columns: 1fr;
+
+	}
+}
+
+@media (min-width: 700px) {
+	.container {
+		width: 600px;
+	}
+	.cards {
+		grid-template-columns: 1fr 1fr;
+
+	}
+}
+
+@media (min-width: 1000px) {
+	body{
+		display: flex;
+		flex-direction: column;
+	}
+	header:nth-child(1){
+		align-self: center;
+	}
+	.container:nth-child(2){
+		display: flex;
+	}
+	aside:nth-child(1){
+		flex:1;
+	}
+	main:nth-child(2){
+			flex: 2;
+		}
+	footer:nth-child(3){
+		align-self: flex-start;
+	}
+	
+}
