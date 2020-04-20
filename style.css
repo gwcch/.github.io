@@ -1,15 +1,24 @@
 body{
 	font-family: 'Chivo', Arial, sans-serif;
+	font-weight: 300;
 	margin: 0;
+	display: flex;
+	align-items: stretch;
+}
+h1{
+	margin-bottom: 0;
 }
 h1 span {
 	color: #ffca0a;
 }
 h2{
-	font-weight: bold;
+	font-weight: 900;
 }
 h1, h2{
 	text-transform: uppercase;
+}
+h2 i{
+	margin-right: 2%;
 }
 aside{
 	width: 30%;
@@ -43,6 +52,16 @@ main h2{
 main i{
 	color:#ffca0a;
 }
+header{
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+header p{
+	margin-top: initial;
+}
+footer{
+	margin-top: 100%;
+}
 footer i{
 	border: solid black;
 	border-radius: 50%;
@@ -61,21 +80,23 @@ ul{
 	margin-top:0;
 	padding-left:0;
 }
+#souligne{
+	border-bottom: solid #ffca0a;
+}
 .col-icon{
 	width: 5%;
 }
 .col-prm{
 	width: 25%;
+	font-weight: 400;
 }
 .col-scd{
 	width: 50%;
+	text-transform: uppercase;
+	font-weight: 700;
 }
-#souligne{
-	border-bottom: solid #ffca0a;
-}
-.container{
-	display: flex;
-	align-items: stretch;
+.ville{
+	font-weight: 400;
 }
 .loisirs{
 	display: flex;
@@ -84,4 +105,5 @@ ul{
 }
 .rec{
 	width: 100%;
+	padding-bottom: 100%;
 }
