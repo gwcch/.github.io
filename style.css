@@ -80,6 +80,9 @@ ul{
 	margin-top:0;
 	padding-left:0;
 }
+#souligne{
+	border-bottom: solid #ffca0a;
+}
 .col-icon{
 	width: 5%;
 }
@@ -94,9 +97,6 @@ ul{
 }
 .ville{
 	font-weight: 400;
-}
-#souligne{
-	border-bottom: solid #ffca0a;
 }
 .loisirs{
 	display: flex;
