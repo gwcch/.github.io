@@ -23,7 +23,8 @@ h2 i{
 aside{
 	width: 30%;
 	background-color: #ffca0a;
-	padding: 0;
+	display: flex;
+	flex-direction: column;
 }
 aside h2, footer h2{
 	background-color: #4a3d35;
@@ -53,14 +54,14 @@ main i{
 	color:#ffca0a;
 }
 header{
-	padding-top: 15%;
-	padding-bottom: 15%;
+	padding-top: 9%;
+	padding-bottom: 6%;
 }
 header p{
-	margin-top: initial;
+	margin-top: 1%;
 }
 footer{
-	margin-top: 100%;
+	align-items: flex-end;
 }
 footer i{
 	border: solid black;
@@ -74,6 +75,9 @@ footer i{
 address{
 	font-style: normal;
 	margin: 10%;
+}
+address li{
+	padding-top: 5%;
 }
 ul{
 	list-style:none;
@@ -105,5 +109,5 @@ ul{
 }
 .rec{
 	width: 100%;
-	padding-bottom: 100%;
+	padding-bottom: 3%;
 }
