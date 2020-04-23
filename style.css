@@ -1,15 +1,22 @@
+html {
+	background-color: black;
+}
 body{
+	background-color: white;
 	font-family: 'Chivo', Arial, sans-serif;
 	font-weight: 300;
-	margin: 0;
+	margin: 0 auto;
+	width: 80%;
 	display: flex;
-	align-items: stretch;
+	flex-wrap: wrap ;
 }
 h1{
-	margin-bottom: 0;
+	margin: 0;
+	font-size: 3em;
+	color: #ffca0a;
 }
 h1 span {
-	color: #ffca0a;
+	color: #000000;
 }
 h2{
 	font-weight: 900;
@@ -18,10 +25,27 @@ h1, h2{
 	text-transform: uppercase;
 }
 h2 i{
-	margin-right: 2%;
+	padding-right: 2%;
+}
+header{
+	display: flex;
+	flex : 1 100% ;
+	margin: 0;
+}
+header img{
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+	margin: 5% auto;
+	display: flex;
+	align-content: center;
+}
+header p{
+	margin-top: 1%;
 }
 aside{
 	width: 30%;
+	/* flex: 0 30%; */
 	background-color: #ffca0a;
 	display: flex;
 	flex-direction: column;
@@ -32,18 +56,31 @@ aside h2, footer h2{
 	text-align: center;
 	margin: 0;
 }
-aside img{
-		border-radius: 50%;
-    display: block;
-    padding: 10%;
-    margin: 0 auto;
-}
 aside p{
 	text-align: justify;
 	margin: 10%;
 }
+address{
+	font-style: normal;
+	margin: 10%;
+}
+address li{
+	padding-top: 5%;
+}
+footer{
+	margin-top: auto;
+}
+footer i{
+	border: solid black;
+	border-radius: 50%;
+	width: 74px;
+	height: 66px;
+	text-align: center;
+	padding-top: 14px;
+	margin-top: 7%;
+}
 main{
-	width: 70%;
+	flex: 1 1;
 	padding-left: 5%;
 	padding-right: 5%;
 }
@@ -53,32 +90,6 @@ main h2{
 main i{
 	color:#ffca0a;
 }
-header{
-	padding-top: 9%;
-	padding-bottom: 6%;
-}
-header p{
-	margin-top: 1%;
-}
-footer{
-	align-items: flex-end;
-}
-footer i{
-	border: solid black;
-	border-radius: 50%;
-	width: 87px;
-	height: 76px;
-	text-align: center;
-	padding-top: 14px;
-	margin-top: 10%;
-}
-address{
-	font-style: normal;
-	margin: 10%;
-}
-address li{
-	padding-top: 5%;
-}
 ul{
 	list-style:none;
 	margin-top:0;
@@ -87,6 +98,17 @@ ul{
 #souligne{
 	border-bottom: solid #ffca0a;
 }
+/* Avatar */
+.avatar{
+	flex: 0 30%;
+	background-color: #ffca0a;
+}
+/* Prénom NOM - Métier */
+.identite{
+	padding-top: 5%;
+	padding-left: 5%;
+}
+/* Tableau */
 .col-icon{
 	width: 5%;
 }
@@ -106,8 +128,72 @@ ul{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding: 3%;
 }
 .rec{
 	width: 100%;
 	padding-bottom: 3%;
+}
+/* Tablette */
+@media (max-width: 1024px) {
+	h1{
+		font-size: 2em;
+		padding-top: 1em;
+	}
+	h1 span{
+		white-space: nowrap;
+	}
+	aside{
+		width: 100%;
+	}
+	aside p{
+		margin: 2% 10%;
+	}
+	address{
+		margin: 2% 10%;
+	}
+	address ul{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	address li{
+		padding-top: 2%;
+		padding-right: 2%;
+		width: 30%;
+	}
+	address li:nth-of-type(3){
+		order:3;
+	}
+	footer i{
+		margin-top:auto;
+	}
+	.avatar{
+		background-color: #ffffff;
+	}
+	.identite{
+		padding-left: 0%;
+	}
+}
+/* Smartphone */
+@media (max-width: 600px) {
+	h1{
+		padding: 0;
+	}
+	header{
+		display: inline;
+		width: 100%;
+	}
+	address ul{
+		text-align: center;
+	}
+	address li{
+		width: 100%;
+	}
+	.identite{
+		text-align: center;
+		padding: 0;
+	}
+	.col-icon{
+		width: 0;
+	}
 }
