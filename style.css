@@ -105,6 +105,7 @@ ul{
 }
 /* Prénom NOM - Métier */
 .identite{
+	width: 65%;
 	padding-top: 5%;
 	padding-left: 5%;
 }
@@ -136,6 +137,9 @@ ul{
 }
 /* Tablette */
 @media (max-width: 1024px) {
+	body{
+		width: 100%;
+	}
 	h1{
 		font-size: 2em;
 		padding-top: 1em;
@@ -172,12 +176,22 @@ ul{
 	}
 	.identite{
 		padding-left: 0%;
+		margin: 0 auto;
 	}
 }
 /* Smartphone */
 @media (max-width: 600px) {
+	html{
+		background-color: white;
+	}
+	body{
+		width: 100%;
+	}
 	h1{
 		padding: 0;
+	}
+	h2{
+		font-size: 1.3em;
 	}
 	header{
 		display: inline;
@@ -188,6 +202,14 @@ ul{
 	}
 	address li{
 		width: 100%;
+	}
+	tr {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+	}
+	td i{
+			color: white;
 	}
 	.identite{
 		text-align: center;
