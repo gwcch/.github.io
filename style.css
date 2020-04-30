@@ -27,7 +27,9 @@ h1, h2{
 h2 i{
 	padding-right: 2%;
 }
+/*______________________________________*/
 /* header : Avatar - Identité : Prénom NOM - Métier --> */
+/*______________________________________*/
 header{
 	margin: 0;
 	display: flex;
@@ -44,7 +46,9 @@ header img{
 header p{
 	margin-top: 1%;
 }
+/*______________________________________*/
 /* Partie présentation générale : Parite gauche */
+/*______________________________________*/
 aside{
 	background-color: #ffca0a;
 	width: 30%;
@@ -80,7 +84,9 @@ footer i{
 	padding-top: 14px;
 	margin-top: 7%;
 }
+/*______________________________________*/
 /* Formation et Expériences : Partie droite */
+/*______________________________________*/
 main{
 	flex: 1 1;
 	padding-left: 5%;
@@ -97,9 +103,11 @@ ul{
 	margin-top:0;
 	padding-left:0;
 }
+/*______________________________________*/
 #souligne{
 	border-bottom: solid #ffca0a;
 }
+/*______________________________________*/
 /* Avatar */
 .avatar{
 	flex: 0 30%;
@@ -118,7 +126,7 @@ ul{
 	align-items: center;
 	padding: 3%;
 }
-/* partie droite Formation et Expérience */
+/* partie droite : Main - Formation et Expérience */
 .detail{
 	display: flex;
 	flex-wrap: wrap;
@@ -164,7 +172,9 @@ ul{
 .rec{
 	width: 45%;
 }
+/*______________________________________*/
 /* Tablette */
+/*______________________________________*/
 @media (max-width: 1024px) {
 	body{
 		width: 100%;
@@ -203,15 +213,20 @@ ul{
 	main{
 		padding: 1%;
 	}
+	/*______________________________________*/
+/*Avatar*/
 	.avatar{
 		background-color: #ffffff;
 	}
+	/* Header presentation */
 	.identite{
 		padding-left: 0%;
 		margin: 0 auto;
 	}
 }
+/*______________________________________*/
 /* Smartphone */
+/*______________________________________*/
 @media (max-width: 600px) {
 	html{
 		background-color: white;
@@ -237,6 +252,7 @@ ul{
 	main article p{
 		margin: 0 auto;
 	}
+	/*______________________________________*/
 	/* Header presentation */
 	.identite{
 		text-align: center;
