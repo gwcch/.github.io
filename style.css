@@ -284,10 +284,9 @@ ul{
 	}
 	.description{
 		width: 90%;
-		padding-top: 20px;
-		padding-bottom: 40px;
-		margin-left: 6px;
-		margin-right: 6px;
+		padding-top: 10px;
+		padding-bottom: 30px;
+		margin-left: 5%;
 	}
 	/* Main : recommandations */
 	.recs{
