@@ -230,6 +230,9 @@ ul{
 	html{
 		background-color: white;
 	}
+	body{
+		font-size: 13px;
+	}
 	h1{
 		padding: 0;
 	}
@@ -247,6 +250,10 @@ ul{
 	}
 	address li{
 		width: 100%;
+	}
+	main{
+		padding-right: 5%;
+		padding-left: 5%;
 	}
 	main article p{
 		margin: 6px auto;
